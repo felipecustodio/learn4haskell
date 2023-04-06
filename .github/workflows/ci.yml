@@ -13,19 +13,19 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        cabal: ["3.2"]
-        ghc: ["8.10.4"]
+        cabal: ["3.8"]
+        ghc: ["9.4.4"]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - uses: haskell/actions/setup@v1
+    - uses: haskell/actions/setup@v2
       name: Setup Haskell
       with:
         ghc-version: ${{ matrix.ghc }}
         cabal-version: ${{ matrix.cabal }}
 
-    - uses: actions/cache@v2
+    - uses: actions/cache@v3
       name: Cache ~/.cabal/store
       with:
         path: ~/.cabal/store
@@ -40,18 +40,18 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        cabal: ["3.2"]
-        ghc: ["8.10.4"]
+        cabal: ["3.8"]
+        ghc: ["9.4.4"]
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - uses: haskell/actions/setup@v1
+    - uses: haskell/actions/setup@v2
       name: Setup Haskell
       with:
         ghc-version: ${{ matrix.ghc }}
         cabal-version: ${{ matrix.cabal }}
 
-    - uses: actions/cache@v2
+    - uses: actions/cache@v3
       name: Cache ~/.cabal/store
       with:
         path: ~/.cabal/store
@@ -75,18 +75,18 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        cabal: ["3.2"]
-        ghc: ["8.10.4"]
+        cabal: ["3.8"]
+        ghc: ["9.4.4"]
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - uses: haskell/actions/setup@v1
+    - uses: haskell/actions/setup@v2
       name: Setup Haskell
       with:
         ghc-version: ${{ matrix.ghc }}
         cabal-version: ${{ matrix.cabal }}
 
-    - uses: actions/cache@v2
+    - uses: actions/cache@v3
       name: Cache ~/.cabal/store
       with:
         path: ~/.cabal/store
@@ -110,18 +110,18 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        cabal: ["3.2"]
-        ghc: ["8.10.4"]
+        cabal: ["3.8"]
+        ghc: ["9.4.4"]
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - uses: haskell/actions/setup@v1
+    - uses: haskell/actions/setup@v2
       name: Setup Haskell
       with:
         ghc-version: ${{ matrix.ghc }}
         cabal-version: ${{ matrix.cabal }}
 
-    - uses: actions/cache@v2
+    - uses: actions/cache@v3
       name: Cache ~/.cabal/store
       with:
         path: ~/.cabal/store
@@ -136,18 +136,18 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        cabal: ["3.2"]
-        ghc: ["8.10.4"]
+        cabal: ["3.8"]
+        ghc: ["9.4.4"]
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    - uses: haskell/actions/setup@v1
+    - uses: haskell/actions/setup@v2
       name: Setup Haskell
       with:
         ghc-version: ${{ matrix.ghc }}
         cabal-version: ${{ matrix.cabal }}
 
-    - uses: actions/cache@v2
+    - uses: actions/cache@v3
       name: Cache ~/.cabal/store
       with:
         path: ~/.cabal/store
